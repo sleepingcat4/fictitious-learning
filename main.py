@@ -33,11 +33,11 @@ def fictitious_play(
 
 
 A = np.array([[1, -1],
-              [-1, 1]])
+              [0, 2]])
 
 B = -A
 
-fp = fictitious_play(A, B, iterations=10)
+fp = fictitious_play(A, B, iterations=100)
 
 for step, play_counts in enumerate(fp):
     print(f"Step {step}: Player 1 - {play_counts[0]}, Player 2 - {play_counts[1]}")
